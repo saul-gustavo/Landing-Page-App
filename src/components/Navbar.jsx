@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header className="bg-transparent py-4">
+    <header className="bg-transparent py-4 px-4 lg:px-30 xl:px-50">
       <nav className="flex md:flex-row items-center justify-between">
         <h2 className="text-4xl">Spark</h2>
         <ul className="hidden md:flex gap-8 items-center">

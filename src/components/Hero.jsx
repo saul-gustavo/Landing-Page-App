@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 export default function Hero() {
   return (
     <div className="relative">
-      <section className="w-full px-4 lg:px-30 min-h-screen">
-        <Navbar />
-        <div className="w-full my-8 grid grid-cols-1 items-center md:grid-cols-2 md:justify-between gap-4">
+      <Navbar />
+      <section className="w-full px-4 lg:px-30 xl:px-50 min-h-screen flex flex-col lg:flex-row items-center justify-center ">
+        <div className="w-full my-8 flex flex-col items-center md:flex-row gap-4">
           <div className="text-center">
-            <h1 className="text-3xl text-center lg:text-4xl md:text-left mb-6">
+            <h1 className="text-4xl text-center lg:text-5xl md:text-left mb-6 font-semibold">
               Transforma tus ideas en proyectos, sin distracciones.
             </h1>
             <p className="mb-4 text-center md:text-left">
@@ -21,11 +21,13 @@ export default function Hero() {
             </div>
           </div>
 
-          <img
-            src={HeroImg}
-            alt="hero imagen de la app"
-            className="w-[350px] md:w-96 h-auto inline-block mx-auto object-cover"
-          />
+          <div className="w-full">
+            <img
+              src={HeroImg}
+              alt="hero imagen de la app"
+              className="w-full max-w-80 md:max-w-96 h-auto block m-auto object-cover"
+            />
+          </div>
         </div>
       </section>
       {/* #1d4ed8 */}

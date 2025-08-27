@@ -2,7 +2,7 @@ import BtnDescarga from "./BtnDescarga";
 
 export default function CTA() {
   return (
-    <div className="py-20 w-full">
+    <div className="py-20 w-full px-4">
       <section className="px-4 w-full max-w-[1200px] m-auto rounded-4xl flex flex-col items-center justify-center bg-gradient-to-b from-(--color-purple) to-(--color-cyan) h-[500px]">
         <div className="max-w-3xl m-auto text-center">
           <h3 className="mb-4 font-bold text-2xl md:text-4xl">
