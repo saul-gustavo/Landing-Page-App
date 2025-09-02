@@ -32,7 +32,7 @@ export default function Navbar() {
             </a>
           ))}
         </ul>
-        <button className="px-6 py-2 bg-gradient-to-b bg-black text-white font-semibold rounded-3xl cursor-pointer hover:opacity-90">
+        <button className="px-6 py-2 bg-gradient-to-b bg-black text-white font-semibold rounded-3xl cursor-pointer hover:opacity-90 shadow-btns hover:shadow-none transition-all duration-100 ease-in">
           Descargar
         </button>
       </nav>
