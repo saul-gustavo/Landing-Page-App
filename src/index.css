@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-titles: #000c92;
+  --color-titles: #6b46c1;
   --color-bor-card: #9acdff;
   --color-btn: #59a8f8;
-  --color-blur-span: #1d4ed8;
-  --color-blur-shadow: 0 0 1000px 50px #1d4ed8;
   --color-text-faq: #575757;
+  --color-footer-link: #c4c4c4;
   --color-line-footer: #6e6e6e;
   /* gradiente */
   --color-purple: #c5bcff;
   --color-cyan: #66e1ff;
+  --color-gradient-blue: #e8eaf6;
+  --color-gradient-blue-op: #eff6ff;
 }

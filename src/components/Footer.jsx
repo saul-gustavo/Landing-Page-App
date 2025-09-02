@@ -1,32 +1,94 @@
 export default function Footer() {
+  const footerLinks = {
+    proteccion: [
+      {
+        fooText: "Privacidad",
+        href: "#",
+      },
+      {
+        fooText: "Terminos de Uso",
+        href: "#",
+      },
+      {
+        fooText: "Datos del usuario",
+        href: "#",
+      },
+    ],
+    guia: [
+      {
+        fooText: "Compatibilidad",
+        href: "#",
+      },
+      {
+        fooText: "Uso de la App",
+        href: "#",
+      },
+      {
+        fooText: "Documentación",
+        href: "#",
+      },
+    ],
+    documento: [
+      {
+        fooText: "Disponibilidad",
+        href: "#",
+      },
+      {
+        fooText: "Centro de Ayuda",
+        href: "#",
+      },
+      {
+        fooText: "API",
+        href: "#",
+      },
+    ],
+  };
+
   return (
-    <footer className="px-4 lg:px-30 xl:px-50 border-2 bg-black py-8">
-      <div className="text-white pb-4 border-line-footer border-b-2 w-full">
+    <footer className="px-4 py-10 lg:px-30 xl:px-50 bg-black">
+      <div className="text-white pb-4 border-line-footer border-b-2 w-full flex flex-col gap-4 md:flex-row items-center md:justify-between">
         <h1 className="text-3xl lg:text-4xl text-center md:text-left">Spark</h1>
-      </div>
-      <div className="mt-4 flex flex-col justify-center gap-8 items-center md:flex-row md:justify-between md:items-start">
-        <ul className="text-white text-center md:text-left">
-          <li className="mb-2">
-            <span className="text-gray-300">Proteccion al usuario</span>
-          </li>
-          <li>Privacidad</li>
-          <li>Terminos de Uso</li>
-          <li>Datos del Usuario</li>
-        </ul>
-        <ul className="text-white text-center md:text-left">
-          <li className="mb-2">
-            <span className="text-gray-300">Guia Rapida</span>
-          </li>
-          <li>Copatibilidad</li>
-          <li>Uso de la App</li>
-          <li>Apartados de la App</li>
-        </ul>
-        <div id="redes" className="inline-flex gap-3">
-          <div className="w-6 h-6 rounded-4xl bg-red-300"></div>
-          <div className="w-6 h-6 rounded-4xl bg-red-300"></div>
-          <div className="w-6 h-6 rounded-4xl bg-red-300"></div>
-          <div className="w-6 h-6 rounded-4xl bg-red-300"></div>
+        <div className="flex gap-2" id="redes">
+          <div className="rounded-full bg-red-500 w-6 h-6"></div>
+          <div className="rounded-full bg-red-500 w-6 h-6"></div>
+          <div className="rounded-full bg-red-500 w-6 h-6"></div>
+          <div className="rounded-full bg-red-500 w-6 h-6"></div>
         </div>
+      </div>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
+        <ul className="flex flex-col gap-2">
+          <span className="text-footer-link">Protección al usuario</span>
+          {footerLinks.proteccion.map((text, links) => (
+            <a
+              href={links.href}
+              className="text-white hover:text-blue-400 w-fit cursor-pointer"
+            >
+              {text.fooText}
+            </a>
+          ))}
+        </ul>
+        <ul className="flex flex-col gap-2">
+          <span className="text-footer-link">Guia Rapida</span>
+          {footerLinks.guia.map((text, links) => (
+            <a
+              href={links.href}
+              className="text-white hover:text-blue-400 w-fit cursor-pointer"
+            >
+              {text.fooText}
+            </a>
+          ))}
+        </ul>
+        <ul className="flex flex-col gap-2">
+          <span className="text-footer-link">Recursos</span>
+          {footerLinks.documento.map((text, links) => (
+            <a
+              href={links.href}
+              className="text-white hover:text-blue-400 w-fit cursor-pointer"
+            >
+              {text.fooText}
+            </a>
+          ))}
+        </ul>
       </div>
     </footer>
   );

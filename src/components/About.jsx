@@ -5,7 +5,7 @@ import iconTablero from "../assets/icon-tableros.svg";
 import iconNet from "../assets/icon-network.svg";
 export default function About() {
   return (
-    <section className="px-4 lg:px-30 xl:px-50 py-30">
+    <section className="px-4 lg:px-30 xl:px-50 py-30" id="nosotros">
       <div className="text-center max-w-2xl m-auto">
         <h2 className="text-titles text-2xl mb-2 font-bold">
           La manera más simple de organizar tu universo creativo.
@@ -31,7 +31,7 @@ export default function About() {
           </p>
         </div>
         {/* Card central (el celular) */}
-        <div className="bg-gradient-to-b from-(--color-purple) to-(--color-cyan) shadow-lg rounded-2xl flex items-center justify-center col-span-1 row-span-2">
+        <div className="bg-gradient-to-b from-(--color-purple) to-(--color-cyan) shadow-lg rounded-2xl flex items-center justify-center col-span-1 row-span-2 border-bor-card border-2">
           <img
             src={CardImg} // pon aquí tu imagen del celular
             alt="App Preview mockup"
