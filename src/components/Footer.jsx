@@ -1,4 +1,7 @@
 import logoSpark from "../assets/logo-spark.svg";
+import iconFace from "../assets/icon-facebook.svg";
+import iconInst from "../assets/icon-instagram.svg";
+import iconGit from "../assets/icon-github.svg";
 
 export default function Footer() {
   const footerLinks = {
@@ -58,10 +61,15 @@ export default function Footer() {
           <span className="text-2xl">Spark</span>
         </div>
         <div className="flex gap-2" id="redes">
-          <div className="rounded-full bg-red-500 w-6 h-6"></div>
-          <div className="rounded-full bg-red-500 w-6 h-6"></div>
-          <div className="rounded-full bg-red-500 w-6 h-6"></div>
-          <div className="rounded-full bg-red-500 w-6 h-6"></div>
+          <a href="#">
+            <img src={iconFace} alt="icono red social facebook" />
+          </a>
+          <a href="#">
+            <img src={iconInst} alt="icono red social instagram" />
+          </a>
+          <a href="#">
+            <img src={iconGit} alt="icono red social instagram" />
+          </a>
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-4">
