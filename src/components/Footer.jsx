@@ -1,3 +1,5 @@
+import logoSpark from "../assets/logo-spark.svg";
+
 export default function Footer() {
   const footerLinks = {
     proteccion: [
@@ -47,7 +49,14 @@ export default function Footer() {
   return (
     <footer className="px-4 py-10 lg:px-30 xl:px-50 bg-footer-bg">
       <div className="text-white pb-4 border-line-footer border-b-2 w-full flex flex-col gap-4 md:flex-row items-center md:justify-between">
-        <h1 className="text-3xl lg:text-4xl text-center md:text-left">Spark</h1>
+        <div className="flex gap-2 items-center">
+          <img
+            src={logoSpark}
+            alt="logo spark"
+            className="w-full h-auto block"
+          />
+          <span className="text-2xl">Spark</span>
+        </div>
         <div className="flex gap-2" id="redes">
           <div className="rounded-full bg-red-500 w-6 h-6"></div>
           <div className="rounded-full bg-red-500 w-6 h-6"></div>

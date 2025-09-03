@@ -1,3 +1,5 @@
+import logoSpark from "../assets/logo-spark.svg";
+
 export default function Navbar() {
   const linksNav = [
     {
@@ -21,7 +23,14 @@ export default function Navbar() {
   return (
     <header className="bg-transparent py-4 px-4 lg:px-30 xl:px-50">
       <nav className="flex md:flex-row items-center justify-between">
-        <h2 className="text-3xl md:text-4xl">Spark</h2>
+        <div className="flex gap-2 items-center">
+          <img
+            src={logoSpark}
+            alt="logo spark"
+            className="w-full h-auto block"
+          />
+          <span className="text-2xl">Spark</span>
+        </div>
         <ul className="hidden md:flex gap-8 items-center">
           {linksNav.map((text, link) => (
             <a
