@@ -2,7 +2,7 @@ import { FaQs } from "../data.js";
 
 export default function FAQs() {
   return (
-    <section className="px-4 lg:px-30 min-h-screen flex flex-col items-center gap-4 py-10">
+    <section className="px-4 lg:px-30 min-h-screen flex flex-col items-center justify-center gap-4 py-10">
       <div className="mb-8">
         <h3 className="text-titles text-center text-2xl font-bold mb-4">
           Preguntas Frecuentes

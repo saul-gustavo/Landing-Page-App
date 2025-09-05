@@ -5,7 +5,10 @@ import iconTablero from "../assets/icon-tableros.svg";
 import iconNet from "../assets/icon-network.svg";
 export default function About() {
   return (
-    <section className="px-4 lg:px-30 xl:px-50 py-30" id="nosotros">
+    <section
+      className="px-4 lg:px-30 xl:px-50 min-h-screen grid content-center"
+      id="nosotros"
+    >
       <div className="text-center max-w-2xl m-auto">
         <h2 className="text-titles text-2xl mb-2 font-bold">
           La manera más simple de organizar tu universo creativo.
@@ -18,7 +21,7 @@ export default function About() {
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* card 1 */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2">
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2 hover:shadow-xs transition-all duration-100 ease-in">
           <img
             src={iconColab}
             alt="icono colaboracion funcion de la app"
@@ -31,7 +34,7 @@ export default function About() {
           </p>
         </div>
         {/* Card central (el celular) */}
-        <div className="bg-gradient-to-b from-(--color-purple) to-(--color-cyan) shadow-lg rounded-2xl flex items-center justify-center col-span-1 row-span-2 border-bor-card border-2">
+        <div className="bg-gradient-to-b from-(--color-purple) to-(--color-cyan) shadow-lg rounded-2xl flex items-center justify-center col-span-1 row-span-2 border-bor-card border-2 hover:shadow-xs transition-all duration-100 ease-in">
           <img
             src={CardImg} // pon aquí tu imagen del celular
             alt="App Preview mockup"
@@ -40,7 +43,7 @@ export default function About() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2">
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2 hover:shadow-xs transition-all duration-100 ease-in">
           <img
             src={iconTablero}
             alt="icono de los tableros de la app"
@@ -56,7 +59,7 @@ export default function About() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2">
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2 hover:shadow-xs transition-all duration-100 ease-in">
           <img
             src={iconCompa}
             alt="icono de compatibilidad de la app"
@@ -70,7 +73,7 @@ export default function About() {
         </div>
 
         {/* Card 4 */}
-        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2">
+        <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between border-bor-card border-2 hover:shadow-xs transition-all duration-100 ease-in">
           <img
             src={iconNet}
             alt="icono de sincronizacion de la app"
