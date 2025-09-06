@@ -15,7 +15,7 @@ export default function FAQs() {
         {FaQs.map((question) => (
           <div
             key={question.id}
-            className="grid gap-2 mb-4 border-b-2 border-gray-400"
+            className="grid gap-2 mb-4 border-b-2 border-gray-400 hover:translate-x-2 transition-all duration-200 ease-in"
           >
             <h3 className="font-bold mb-1">{question.pregunta}</h3>
             <p className="text-(--color-text-faq) mb-2">{question.respuesta}</p>
