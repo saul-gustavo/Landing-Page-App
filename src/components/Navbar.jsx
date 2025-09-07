@@ -14,10 +14,6 @@ export default function Navbar() {
       textNav: "Preguntas",
       href: "#",
     },
-    {
-      textNav: "Reseñas",
-      href: "#",
-    },
   ];
 
   return (
